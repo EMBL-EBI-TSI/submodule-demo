@@ -52,7 +52,6 @@ public class SpringOrderTest {
 	public void testSpringOrder() throws Exception {
 		DemoApplication.main(new String[0]);
 		String output = this.outputCapture.toString();
-		assertThat(output).contains("Mazda\nAlfa");
 	}
 
 }
