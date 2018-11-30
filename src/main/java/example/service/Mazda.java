@@ -5,8 +5,14 @@ import org.springframework.stereotype.Component;
 
 @Component
 @Order(1)
-class Mazda extends Car {
+class Mazda implements Car {
+	
     public String getName() {
         return "Mazda";
     }
+
+	@Override
+	public String someMethod(Owner owner) {
+		return owner.getName();
+	}
 }

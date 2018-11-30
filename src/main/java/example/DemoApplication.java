@@ -1,6 +1,8 @@
 package example;
 
 import example.service.Cars;
+import example.service.Owner;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
@@ -19,6 +21,7 @@ public class DemoApplication implements CommandLineRunner {
 
 	@Override
 	public void run(String... strings) throws Exception {
-		cars.printNames();
+		Owner owner = new Owner("jeff", "M");
+		cars.printCarOwners(owner);
 	}
 }

@@ -7,13 +7,15 @@ import java.util.List;
 
 @Component
 public class Cars {
+	
     @Autowired
     List<Car> cars;
+    
 
-    public void printNames() {
+    public void printCarOwners(Owner owner) {
 
         for(Car car : cars) {
-            System.out.println(car.getName());
+            System.out.println(car.someMethod(owner));
         }
     }
 }

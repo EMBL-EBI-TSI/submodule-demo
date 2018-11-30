@@ -4,9 +4,15 @@ import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
 
 @Component
-@Order(2)
-class Alfa extends Car {
+class Alfa implements Car {
+	
     public String getName() {
         return "Alfa";
     }
+
+	@Override
+	public String someMethod(Owner owner) {
+		// TODO Auto-generated method stub
+		return owner.getGender();
+	}
 }

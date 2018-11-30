@@ -1,6 +1,6 @@
 package example.service;
 
-public abstract class Car {
+public interface Car {
 
-    abstract String getName();
+    abstract String someMethod(Owner owner);
 }
