@@ -1,18 +1,21 @@
-package example.service;
+package example.carvalues;
 
 import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
 
+import example.service.Car;
+import example.service.Owner;
+
 @Component
-@Order(1)
-class Mazda implements Car {
+class Alfa implements Car {
 	
     public String getName() {
-        return "Mazda";
+        return "Alfa";
     }
 
 	@Override
 	public String someMethod(Owner owner) {
-		return owner.getName();
+		// TODO Auto-generated method stub
+		return owner.getGender();
 	}
 }
