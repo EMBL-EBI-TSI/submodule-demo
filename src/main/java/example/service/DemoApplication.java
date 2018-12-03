@@ -1,4 +1,4 @@
-package example;
+package example.service;
 
 import example.service.Cars;
 import example.service.Owner;
