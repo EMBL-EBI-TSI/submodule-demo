@@ -1,3 +1,0 @@
-[submodule "actual-submodule"]
-	path = actual-submodule
-	url = https://github.com/embl-ebi-sdo/actual-submodule

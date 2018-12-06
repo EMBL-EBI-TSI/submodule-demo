@@ -16,12 +16,12 @@
 	</parent>
 
 	<dependencies>
-		<dependency>
+		<!-- <dependency>
 			<groupId>com.example.demo</groupId>
 			<artifactId>actual-submodule</artifactId>
 			<version>1.0</version>
-			<optional>true</optional>
-		</dependency>
+			<optional>true</optional> 
+		</dependency>-->
 		<!-- Compile -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
